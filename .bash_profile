@@ -22,6 +22,7 @@ alias gs='git status'
 alias python=/usr/local/bin/python
 export LC_CTYPE=en_US.UTF-8
 source ~/.bashrc
+source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
 # MacPorts Installer addition on 2008-12-16_at_19:33:09: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
@@ -64,7 +65,7 @@ export PATH
 #custom prompt
 export CLICOLOR=1
 export LSCOLORS="gxfxcxdxBxegedabagacad"
-export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
+export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w$(__git_ps1) \$\[\033[00m\] "
 
 ##
 # Your previous /Users/lirien/.bash_profile file was backed up as /Users/lirien/.bash_profile.macports-saved_2013-09-10_at_21:30:51
@@ -82,4 +83,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # MacPorts Installer addition on 2013-10-09_at_17:22:19: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
+ if [ -f $(brew --prefix)/etc/bash_completion ]; then
+   . $(brew --prefix)/etc/bash_completion
+ fi
 
