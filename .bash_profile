@@ -20,6 +20,8 @@ alias go='git checkout '
 alias gk='gitk --all&'
 alias gs='git status'
 alias gca='git commit --amend'
+alias gap='git add -p'
+alias gl="git log --pretty=format:'%C(yellow)%h%Creset %s %Cblue%d%Creset' --graph"
 alias python=/usr/local/bin/python
 export LC_CTYPE=en_US.UTF-8
 source ~/.bashrc
