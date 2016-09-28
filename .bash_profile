@@ -19,6 +19,7 @@ alias gd='git diff'
 alias go='git checkout '
 alias gk='gitk --all&'
 alias gs='git status'
+alias gca='git commit --amend'
 alias python=/usr/local/bin/python
 export LC_CTYPE=en_US.UTF-8
 source ~/.bashrc
