@@ -1,5 +1,4 @@
 alias ls='ls -G'
-alias pi='ssh -Y pi@192.168.1.70' 
 alias git='/usr/local/git/bin/git'
 alias ga='git add'
 alias gb='git branch '
