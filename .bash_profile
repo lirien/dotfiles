@@ -15,6 +15,7 @@ alias python=/usr/local/bin/python
 export LC_CTYPE=en_US.UTF-8
 source ~/.bashrc
 source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+source ~/.secrets
 
 # MacPorts Installer addition on 2008-12-16_at_19:33:09: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
