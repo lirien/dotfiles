@@ -37,6 +37,8 @@ export PATH="$PATH:/usr/texbin"
 export PATH="$PATH:/usr/local/mysql/bin"
 # MacPython 2.6
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/2.6/bin"
+# yarn
+export PATH="$HOME/.yarn/bin:$PATH"
 
 # custom prompt
 export CLICOLOR=1
