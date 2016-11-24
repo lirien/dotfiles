@@ -49,3 +49,12 @@ export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w$(__git_ps1) \$\[\033[00m\] "
    . $(brew --prefix)/etc/bash_completion
  fi
 
+# oggify
+function oggify_all
+{
+	directory=$1
+
+	# Convert all FLACs in a folder and its subfolders to mp3s.
+	mkdir "$directory"/mp3
+	oggify -o mp3 "$directory" "$directory"/mp3
+}
