@@ -39,6 +39,8 @@ export PATH="$PATH:/usr/local/mysql/bin"
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/2.6/bin"
 # yarn
 export PATH="$HOME/.yarn/bin:$PATH"
+# esp32 toolchain
+export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin
 
 # custom prompt
 export CLICOLOR=1
