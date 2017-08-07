@@ -60,3 +60,5 @@ function oggify_all
 	mkdir "$directory"/mp3
 	oggify -o mp3 "$directory" "$directory"/mp3
 }
+
+export PATH="$HOME/.cargo/bin:$PATH"

@@ -11,7 +11,7 @@ let g:CommandTMaxFiles=50000
 :autocmd FileType c,cpp :set cindent
 syntax on
 :set number
-:set tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
+:set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 :set ruler
 
 set background=dark 
